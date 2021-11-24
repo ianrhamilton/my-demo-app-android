@@ -27,7 +27,7 @@ import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class DashboardToCheckout extends BaseTest {
+public class DashboardToCheckoutTest extends BaseTest {
 
     //This ViewAction For Nested ScrollView
     private final ViewAction scroll = new NestingAwareScrollAction();
@@ -42,6 +42,7 @@ public class DashboardToCheckout extends BaseTest {
 
     @Test
     @HappyFlow
+    @Ignore
     public void dashboardProductTest() {
         // Splash screen
         waitView(withId(R.id.menuIV));
